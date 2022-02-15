@@ -4,7 +4,7 @@ from tkinter import ttk, scrolledtext
 
 root = Tk()
 root.title("Topic 1")
-root.geometry('650x850')
+root.geometry('650x950')
 
 # 1)
 button1 = Button(root, text = "Hello" , fg = "blue", height=1, width=10).pack(pady=2)
@@ -68,7 +68,28 @@ stopButton = ttk.Button(root, text='Stop', command=progressBar.stop)
 stopButton.pack(pady=2)
 
 # 11)
+def displayTextVolume():
+   global volumeInput1, volumeInput2, volumeInput3
+   Volume = (int(volumeInput1.get()) * int(volumeInput2.get()) * int(volumeInput3.get()))
+   SurfaceArea = 2 * ( int(volumeInput1.get())   *int(volumeInput2.get()) + int(volumeInput2.get())
+    * int(volumeInput3.get()) + int(volumeInput3.get()) * int(volumeInput1.get()))
+   labelVolumeEntry.configure(text=Volume)
+   labelSurfaceAreaEntry.configure(text=SurfaceArea)
 
+labelVolumeEntry=Label(root, text="", font=("Courier 22 bold"))
+labelVolumeEntry.pack(pady=2)
+labelSurfaceAreaEntry = Label(root, text="", font=("Courier 22 bold"))
+labelSurfaceAreaEntry.pack(pady=2)
 
+volumeInput1 = Entry(root, width=20)
+volumeInput1.insert(END, 'Enter Length')
+volumeInput1.pack(pady=5)
+volumeInput2 = Entry(root, width=20)
+volumeInput2.insert(END, 'Enter Width')
+volumeInput2.pack(pady=5)
+volumeInput3 = Entry(root, width=20)
+volumeInput3.insert(END, 'Enter Height')
+volumeInput3.pack(pady=5)
+volumeButton = Button(root, height = 1, width = 15, text ="Calculate Volume", command = displayTextVolume).pack(pady=2)
 
 root.mainloop()
