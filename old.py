@@ -4,7 +4,7 @@ from tkinter import ttk, scrolledtext
 
 root = Tk()
 root.title("Topic 1")
-root.geometry('650x950')
+root.geometry('650x550')
 
 # 1)
 button1 = Button(root, text = "Hello" , fg = "blue", height=1, width=10).pack(pady=2)
@@ -91,5 +91,12 @@ volumeInput3 = Entry(root, width=20)
 volumeInput3.insert(END, 'Enter Height')
 volumeInput3.pack(pady=5)
 volumeButton = Button(root, height = 1, width = 15, text ="Calculate Volume", command = displayTextVolume).pack(pady=2)
+
+# ------------------------------ Scroll Bar --------------------------------------
+
+
+# --------------------------------- End Scroll Bar ----------------------------------
+# 12)
+
 
 root.mainloop()
