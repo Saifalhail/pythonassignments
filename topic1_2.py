@@ -106,7 +106,6 @@ class Assignment(tk.Frame):
         csvFileName.pack(pady=2)
         ttk.Button(root, text= "Pull CSV & Display",width= 25, command= displayCSV).pack(pady=20)    
 
-        # 15) 
 
 
     def onFrameConfigure(self, event):

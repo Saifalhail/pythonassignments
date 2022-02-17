@@ -1,0 +1,4 @@
+hello, goodbye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, hello, hello, hello, hello, hello,
+hello, goodbye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, hello, hello, hello, hello, hello,
+hello, goodbye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, hello, hello, hello, hello, hello, hi, bye, hello, hello, hello, hello, hello,
+hello, hello, hello, hello, hello, hello, goodbye, hi, bye, goodbye, hi, bye, hi, bye, goodbye, hi, bye, goodbye, hi, bye, hello, hello, hello, hello, hello,
